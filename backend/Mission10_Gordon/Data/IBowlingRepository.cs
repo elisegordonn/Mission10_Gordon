@@ -3,5 +3,6 @@
     public interface IBowlingRepository
     {
         IEnumerable<Bowler> GetMarlinsSharks();
+        //link to EFBowlingRepository class
     }
 }

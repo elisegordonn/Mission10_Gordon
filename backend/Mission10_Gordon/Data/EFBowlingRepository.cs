@@ -9,7 +9,7 @@ namespace Mission10_Gordon.Data
             _bowlContext = temp;
         }
        // public IEnumerable<Bowler> Bowlers => _bowlContext.Bowlers;
-        public IEnumerable<Bowler> GetMarlinsSharks()
+        public IEnumerable<Bowler> GetMarlinsSharks() //get marlins sharks llinks to the same call in IBowlingRepository
         {
             return _bowlContext.Bowlers
                 .Include(b => b.Team)

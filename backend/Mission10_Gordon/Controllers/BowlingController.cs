@@ -8,7 +8,7 @@ namespace Mission10_Gordon.Controllers
     [ApiController]
     public class BowlingController : ControllerBase
     {
-        private IBowlingRepository _bowlRepository;
+        private IBowlingRepository _bowlRepository; //link to repository file
         public BowlingController(IBowlingRepository temp)
         {
             _bowlRepository = temp;
@@ -16,6 +16,7 @@ namespace Mission10_Gordon.Controllers
         [HttpGet("marlins-sharks")]
         public IActionResult GetMarlinsSharks()
         {
+            //display data
             var bowlData = _bowlRepository.GetMarlinsSharks();
             return Ok(bowlData);
         }

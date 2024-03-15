@@ -1,3 +1,5 @@
+// Elise Gordon, Mission 10
+// App to display bowling league data
 import React from 'react';
 import './App.css';
 import Header from './Header';
